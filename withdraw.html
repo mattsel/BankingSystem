@@ -1,0 +1,21 @@
+<!-- withdraw.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Withdraw</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Withdraw Funds</h1>
+    <form method="post" action="{{ url_for('withdraw') }}">
+        <label for="amount">Amount:</label>
+        <input type="number" name="amount" required>
+        <button type="submit">Withdraw</button>
+    </form>
+    <a href="{{ url_for('dashboard') }}">
+        <button type="button">Back to Dashboard</button>
+    </a>
+</body>
+</html>

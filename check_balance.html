@@ -1,0 +1,17 @@
+<!-- check_balance.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Balance</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Check Balance</h1>
+    <p>Current balance: ${{ current_balance }}</p>
+    <a href="{{ url_for('dashboard') }}">
+        <button type="button">Back to Dashboard</button>
+    </a>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!-- deposit.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Deposit Funds</h1>
+    <form method="post" action="{{ url_for('deposit') }}">
+        <label for="amount">Amount:</label>
+        <input type="number" name="amount" required>
+        <button type="submit">Deposit</button>
+    </form>
+
+    <form action="{{ url_for('index') }}" method="get">
+        <button type="submit">Go Back Home</button>
+    </form>
+    
+</body>
+</html>

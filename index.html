@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Welcome to the Matt's Bank</h1>
+    <img src="{{ url_for('static', filename='images/banklogo.png') }}" alt="banklogo">
+    <p>Choose an option:</p>
+    <ul>
+        <li><a href="{{ url_for('login') }}">Login</a></li>
+        <li><a href="{{ url_for('new_acc') }}">Create New Account</a></li>
+    </ul>
+</body>
+</html>

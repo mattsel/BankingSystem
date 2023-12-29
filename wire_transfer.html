@@ -1,0 +1,23 @@
+<!-- wire_transfer.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wire Transfer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Wire Transfer</h1>
+    <form method="post" action="{{ url_for('wire_transfer') }}">
+        <label for="recipient">Recipient:</label>
+        <input type="text" name="recipient" required>
+        <label for="amount">Amount:</label>
+        <input type="number" name="amount" required>
+        <button type="submit">Wire Transfer</button>
+    </form>
+    <a href="{{ url_for('dashboard') }}">
+        <button type="button">Back to Dashboard</button>
+    </a>
+</body>
+</html>
